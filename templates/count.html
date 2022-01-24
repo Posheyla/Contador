@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contador</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <h1>Counter</h1>
+        <form action="/count">
+            <h2>{{numero}} times</h2>
+            <div class="contenedor">
+                <button type="submit" class="Click" action="/count" method="POST">
+                    Click
+                </button>
+            
+                <button type="submit" class="Reset">
+                    Reset
+                </button>
+            </div>
+        </form>
+    </body>
+</html>
